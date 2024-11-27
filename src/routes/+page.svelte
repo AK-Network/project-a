@@ -11,7 +11,10 @@
         // Send these coordinates to your backend
         showToast(`latitude: ${latitude} | longitude: ${longitude}`, {duration: 50000})
       },
-      (error) => showToast("Error fetching location", {type: 'error'}),
+      (error) => {
+        showToast("Error fetching location", {type: 'error'})
+        console.error(error)
+      },
     );
   }}>Use my Location</button
 >

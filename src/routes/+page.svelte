@@ -9,7 +9,7 @@
       (position) => {
         const { latitude, longitude } = position.coords;
         // Send these coordinates to your backend
-        alert(`latitude: ${latitude} | longitude: ${longitude}`)
+        showToast(`latitude: ${latitude} | longitude: ${longitude}`, {duration: 50000})
       },
       (error) => showToast("Error fetching location", {type: 'error'}),
     );

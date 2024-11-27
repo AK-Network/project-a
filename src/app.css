@@ -1,0 +1,29 @@
+@layer component, module, state;
+
+@layer reset {
+  * {
+    box-sizing: border-box;
+
+    &::before, &::after {
+      box-sizing: inherit;
+    }
+  }
+}
+
+@layer component {
+  button {
+    border-style: solid;
+    border-color: ButtonFace;
+    border-radius: .25rem;
+    padding: .5rem .75rem;
+
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+:root {
+  color-scheme: dark light;
+}

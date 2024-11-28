@@ -7,7 +7,13 @@
 </script>
 
 <Toaster>
-  {@render children()}
+  <hgroup>
+    <h1>Project A</h1>
+    <h2>web version</h2>
+  </hgroup>
+  <main>
+    {@render children()}
+  </main>
 </Toaster>
 
 
